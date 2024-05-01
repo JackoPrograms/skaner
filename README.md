@@ -16,25 +16,27 @@
 
     https://www.docker.com/products/docker-desktop/
 
-3. Сборка образа:
+3. Перейдите в папку skaner:
+   
+4. Сборка образа. Выполните команду в терминале:
 
     ```bash
     docker-compose build
     ```
 
-4. Узнайте название собранного образа например test_web_4-combined_container:
+5. Узнайте название собранного образа например test_web_4-combined_container. Выполните команду в терминале:
 
     ```bash
     docker images
     ```
 
-5. Запуск контейнера:
+6. Запуск контейнера. Выполните команду в терминале:
 
     ```bash
     docker run -v .:/script -p 8000:8000 test_web_3-combined_container
     ```
 
-6. Web-приложение будет доступно по адресу:
+7. Web-приложение будет доступно по адресу:
 
     http://127.0.0.1:8000/semestr_3/
 
