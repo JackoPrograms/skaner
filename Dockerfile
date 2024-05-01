@@ -1,20 +1,3 @@
-# FROM kalilinux/kali-rolling
-
-# WORKDIR /script
-
-# COPY . /script
-
-# RUN apt-get update && apt-get install -y golang
-
-# RUN bash requirements.sh
-
-# ENTRYPOINT [ "bash", "script.sh" ]
-
-# CMD [ "", "", "" ]
-
-
-
-
 FROM kalilinux/kali-rolling
 
 WORKDIR /script
@@ -32,12 +15,6 @@ RUN apt install python3 -y
 RUN apt install nuclei -y
 RUN apt-get install git -y
 RUN git clone https://github.com/projectdiscovery/nuclei-templates.git
-# RUN nuclei -update-templates
-
-# RUN apt-get update && apt-get install -y dos2unix
-# RUN dos2unix script.sh
-
-# RUN bash requirements.sh
 
 RUN apt install python3-pip -y
 RUN pip install django
