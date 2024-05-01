@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  combined_container:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/script
