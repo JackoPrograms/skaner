@@ -16,9 +16,7 @@ name_folder=`cat name_folder.txt`
 function check_nmap_process {
     if ! ps -p $1 &> /dev/null; then
         name_file=$2
-        echo "--------------------------Имя файла 2: $name_file"
         python3 recording_OS-PO_BD.py $name_file
-        echo "--------------------------Имя файла 3: $name_file"
     fi
 }
 
