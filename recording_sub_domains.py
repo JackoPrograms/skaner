@@ -14,7 +14,7 @@ with open('name_folder.txt', 'r') as file:
 # Имя пути до файла с БД
 path_file = f"./{name_folder}/inf/scan_results.db"
 # Имя сканируемого домена (цели сканирования)
-with open('domain_name.txt', 'r') as file:
+with open('./automated_scanning/domain_name.txt', 'r') as file:
     domain = file.read().strip("\n")
     
 
